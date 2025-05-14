@@ -1,0 +1,11 @@
+syntax = "proto3";
+package guigui17f.protobuf_manager;
+option csharp_namespace = "GUIGUI17F.ProtobufManager";
+option optimize_for = LITE_RUNTIME;
+
+message MapDefinition {
+  string key_type = 1;
+  string value_type = 2;
+  string map_name = 3;
+  int32 field_number = 4;
+}

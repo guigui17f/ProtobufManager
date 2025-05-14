@@ -1,0 +1,23 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" editor-extension-mode="True">
+    <GUIGUI17F.ProtobufManager.ClosableElement flex-grow="1" align-items="FlexStart" style="border-left-width: 2px; border-right-width: 2px; border-top-width: 2px; border-bottom-width: 2px; border-left-color: rgb(32, 32, 32); border-right-color: rgb(32, 32, 32); border-top-color: rgb(32, 32, 32); border-bottom-color: rgb(32, 32, 32); margin-left: 3px; margin-right: 3px; margin-top: 3px; margin-bottom: 3px;">
+        <GUIGUI17F.ProtobufManager.ProtoOneofElement style="flex-grow: 1; flex-direction: row; align-items: flex-start;">
+            <ui:Button text="-" name="fold-button" />
+            <ui:VisualElement name="fold-root" style="flex-grow: 1;">
+                <ui:Label name="shrink-label" style="margin-left: 3px; margin-right: 3px; margin-top: 3px; margin-bottom: 3px;" />
+                <ui:VisualElement name="detail-root">
+                    <ui:VisualElement style="flex-direction: row;">
+                        <ui:Label text="oneof" style="margin-left: 3px; margin-right: 3px; margin-top: 3px; margin-bottom: 3px;" />
+                        <ui:TextField name="name-field" style="min-width: 80px;" />
+                        <ui:Label text="{" style="margin-left: 3px; margin-right: 3px; margin-top: 3px; margin-bottom: 3px;" />
+                    </ui:VisualElement>
+                    <ui:VisualElement name="element-root" style="flex-grow: 1; margin-left: 3px; margin-right: 3px; margin-top: 3px; margin-bottom: 3px;" />
+                    <ui:Label text="}" style="margin-left: 3px; margin-right: 3px; margin-bottom: 3px;" />
+                    <ui:VisualElement style="flex-direction: row; min-height: 22px;">
+                        <ui:Button text="Add Field" name="add-button" style="flex-grow: 1;" />
+                        <ui:Button text="Sort Field" name="sort-button" style="flex-grow: 1;" />
+                    </ui:VisualElement>
+                </ui:VisualElement>
+            </ui:VisualElement>
+        </GUIGUI17F.ProtobufManager.ProtoOneofElement>
+    </GUIGUI17F.ProtobufManager.ClosableElement>
+</ui:UXML>

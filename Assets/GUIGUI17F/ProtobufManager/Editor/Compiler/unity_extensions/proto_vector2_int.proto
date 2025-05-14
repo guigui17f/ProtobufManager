@@ -1,0 +1,9 @@
+syntax = "proto3";
+package unity_extensions;
+option csharp_namespace = "GUIGUI17F.ProtobufManager";
+option optimize_for = LITE_RUNTIME;
+
+message ProtoVector2Int {
+  int32 x = 1;
+  int32 y = 2;
+}

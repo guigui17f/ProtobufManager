@@ -1,0 +1,33 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" editor-extension-mode="True">
+    <ui:ScrollView style="flex-grow: 1;">
+        <ui:VisualElement style="flex-direction: row;">
+            <ui:Label text="package" style="margin-left: 3px; margin-right: 3px; margin-top: 3px; margin-bottom: 3px;" />
+            <ui:TextField name="package-name-field" style="min-width: 80px;" />
+            <ui:Label text=";" style="margin-left: 3px; margin-right: 3px; margin-top: 3px; margin-bottom: 3px;" />
+        </ui:VisualElement>
+        <ui:VisualElement style="flex-direction: row; align-items: flex-start; justify-content: space-between;">
+            <ui:VisualElement name="import-root" />
+            <ui:Button text="Add Import" name="add-import-button" />
+        </ui:VisualElement>
+        <ui:VisualElement style="flex-direction: row; padding-top: 3px; padding-bottom: 3px;">
+            <ui:Label text="option csharp_namespace = &quot;" style="margin-left: 3px; margin-right: 3px; margin-top: 3px; margin-bottom: 3px;" />
+            <ui:TextField name="namespace-field" style="min-width: 80px;" />
+            <ui:Label text="&quot; ;" style="margin-left: 3px; margin-right: 3px; margin-top: 3px; margin-bottom: 3px;" />
+        </ui:VisualElement>
+        <ui:VisualElement style="flex-direction: row; padding-top: 3px; padding-bottom: 3px;">
+            <ui:Label text="option optimize_for =" style="margin-left: 3px; margin-right: 3px; margin-top: 3px; margin-bottom: 3px;" />
+            <GUIGUI17F.ProtobufManager.CompatibleDropdownField index="2" choices="SPEED,CODE_SIZE,LITE_RUNTIME" name="optimize-option-field" />
+            <ui:Label text=";" style="margin-left: 3px; margin-right: 3px; margin-top: 3px; margin-bottom: 3px;" />
+        </ui:VisualElement>
+        <ui:TextField multiline="true" name="other-options-field" style="margin-left: 3px; margin-right: 3px; margin-top: 3px; margin-bottom: 3px; flex-shrink: 1; flex-grow: 1; min-height: 36px;" />
+        <ui:VisualElement name="enum-root" style="flex-grow: 1; margin-left: 3px; margin-right: 3px; margin-top: 3px; margin-bottom: 3px;" />
+        <ui:VisualElement name="message-root" style="flex-grow: 1; margin-left: 3px; margin-right: 3px; margin-top: 3px; margin-bottom: 3px;" />
+    </ui:ScrollView>
+    <ui:VisualElement style="flex-direction: row; margin-top: 10px; margin-bottom: 5px; min-height: 24px;">
+        <ui:Button text="Add Enum" name="add-enum-button" style="flex-grow: 1;" />
+        <ui:Button text="Add Message" name="add-message-button" style="flex-grow: 1;" />
+        <ui:Button text="Sort Element" name="sort-element-button" style="flex-grow: 1;" />
+        <ui:Button text="Revert Deletion" name="revert-deletion-button" style="flex-grow: 1;" />
+    </ui:VisualElement>
+    <ui:Button text="Generate Proto File" name="generate-proto-button" style="margin-top: 5px; margin-bottom: 10px; min-height: 22px;" />
+</ui:UXML>

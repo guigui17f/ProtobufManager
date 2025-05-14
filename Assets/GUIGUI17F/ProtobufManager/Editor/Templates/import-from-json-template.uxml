@@ -1,0 +1,9 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" editor-extension-mode="False">
+    <ui:VisualElement style="margin-left: 15px; margin-right: 15px; flex-direction: row; justify-content: space-between; min-height: 20px; align-items: center; margin-top: 5px; margin-bottom: 5px;">
+        <ui:Label text="Input Json Text" />
+    </ui:VisualElement>
+    <ui:ScrollView class="scroll-view--flex-grow" style="margin-left: 10px; margin-right: 10px; flex-grow: 1;">
+        <ui:TextField name="json-field" multiline="true" style="min-height: 280px;" />
+    </ui:ScrollView>
+    <ui:Button name="import-button" text="Import From Json" style="margin-left: 10px; margin-right: 10px; margin-top: 10px; margin-bottom: 10px; min-height: 25px;" />
+</ui:UXML>

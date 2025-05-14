@@ -1,0 +1,10 @@
+syntax = "proto3";
+package guigui17f.protobuf_manager;
+import "Protos/field_definition.proto";
+option csharp_namespace = "GUIGUI17F.ProtobufManager";
+option optimize_for = LITE_RUNTIME;
+
+message OneofDefinition {
+  string oneof_name = 1;
+  repeated FieldDefinition oneof_fields = 2;
+}

@@ -1,0 +1,9 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" editor-extension-mode="False">
+    <ui:ScrollView style="flex-grow: 1; margin-left: 25px; margin-right: 25px; margin-top: 15px; margin-bottom: 0;">
+        <ui:Label name="message-label" style="white-space: normal;" />
+    </ui:ScrollView>
+    <ui:VisualElement style="flex-direction: row; margin-left: 20px; margin-right: 20px; margin-top: 10px; margin-bottom: 15px; align-items: flex-end; min-height: 30px;">
+        <ui:Button text="OK" name="ok-button" style="padding-left: 5px; padding-right: 5px; padding-top: 5px; padding-bottom: 5px; flex-grow: 1;" />
+        <ui:Button text="Cancel" name="cancel-button" style="padding-left: 5px; padding-right: 5px; padding-top: 5px; padding-bottom: 5px; flex-grow: 1;" />
+    </ui:VisualElement>
+</ui:UXML>

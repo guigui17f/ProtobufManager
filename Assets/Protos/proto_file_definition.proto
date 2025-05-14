@@ -1,0 +1,16 @@
+syntax = "proto3";
+package guigui17f.protobuf_manager;
+import "Protos/enum_definition.proto";
+import "Protos/message_definition.proto";
+option csharp_namespace = "GUIGUI17F.ProtobufManager";
+option optimize_for = LITE_RUNTIME;
+
+message ProtoFileDefinition {
+  repeated string import_protos = 1;
+  string package_name = 2;
+  string csharp_namespace = 3;
+  int32 optimize_type = 4;
+  repeated EnumDefinition enum_definitions = 5;
+  repeated MessageDefinition message_definitions = 6;
+  string other_options = 7;
+}

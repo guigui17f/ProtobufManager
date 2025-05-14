@@ -1,0 +1,10 @@
+syntax = "proto3";
+package unity_extensions;
+import "proto_vector3.proto";
+option csharp_namespace = "GUIGUI17F.ProtobufManager";
+option optimize_for = LITE_RUNTIME;
+
+message ProtoBounds {
+  ProtoVector3 center = 1;
+  ProtoVector3 size = 2;
+}

@@ -1,0 +1,22 @@
+{
+    "name": "Google.Protobuf",
+    "rootNamespace": "",
+    "references": [],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": true,
+    "overrideReferences": false,
+    "precompiledReferences": [
+        ""
+    ],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [
+        {
+            "name": "Unity",
+            "expression": "2019.4",
+            "define": "GOOGLE_PROTOBUF_SUPPORT_FAST_STRING"
+        }
+    ],
+    "noEngineReferences": true
+}

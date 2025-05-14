@@ -1,0 +1,19 @@
+syntax = "proto3";
+package guigui17f.protobuf_manager;
+import "Protos/enum_definition.proto";
+import "Protos/map_definition.proto";
+import "Protos/field_definition.proto";
+import "Protos/oneof_definition.proto";
+option csharp_namespace = "GUIGUI17F.ProtobufManager";
+option optimize_for = LITE_RUNTIME;
+
+message MessageDefinition {
+  string message_name = 1;
+  repeated EnumDefinition enum_definitions = 2;
+  repeated MessageDefinition message_definitions = 3;
+  repeated FieldDefinition normal_fields = 4;
+  repeated MapDefinition map_fields = 5;
+  repeated OneofDefinition oneof_fields = 6;
+  repeated string reserved_numbers = 7;
+  repeated string reserved_names = 8;
+}

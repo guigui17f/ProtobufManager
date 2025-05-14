@@ -1,0 +1,9 @@
+syntax = "proto3";
+package guigui17f.protobuf_manager;
+option csharp_namespace = "GUIGUI17F.ProtobufManager";
+option optimize_for = LITE_RUNTIME;
+
+//used for generate the ProtobufExampleCache class in the example logic
+message ProtobufExampleCache {
+  string input_text = 1;
+}

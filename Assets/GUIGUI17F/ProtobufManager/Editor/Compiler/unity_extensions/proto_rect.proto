@@ -1,0 +1,11 @@
+syntax = "proto3";
+package unity_extensions;
+option csharp_namespace = "GUIGUI17F.ProtobufManager";
+option optimize_for = LITE_RUNTIME;
+
+message ProtoRect {
+  float x = 1;
+  float y = 2;
+  float width = 3;
+  float height = 4;
+}

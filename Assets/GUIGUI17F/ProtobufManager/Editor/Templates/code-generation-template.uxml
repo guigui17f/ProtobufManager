@@ -1,0 +1,11 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" editor-extension-mode="False">
+    <ui:Button text="Add Proto File" name="add-proto-button" style="margin-left: 10px; margin-right: 10px; margin-top: 10px; margin-bottom: 10px; min-height: 20px;" />
+    <ui:ScrollView name="proto-root" style="margin-left: 10px; margin-right: 10px; margin-top: 5px; margin-bottom: 5px;" />
+    <GUIGUI17F.ProtobufManager.CompatibleDropdownField index="1" choices="C++,C#,Java,Kotlin,Objective-C,PHP,Python,Ruby,Dart,Go" label="Target Language" name="language-dropdown" style="margin-left: 10px; margin-right: 10px; margin-top: 10px; margin-bottom: 10px;" />
+    <ui:TextField name="parameter-field" label="Extra Parameters" style="margin-left: 10px; margin-right: 10px; margin-top: 10px; margin-bottom: 10px;" />
+    <ui:VisualElement style="flex-direction: row; margin-top: 10px; margin-bottom: 10px; margin-left: 10px; margin-right: 10px; min-height: 22px;">
+        <ui:TextField name="path-field" style="flex-grow: 1;" />
+        <ui:Button text="Browse Target Folder" name="browse-path-button" />
+    </ui:VisualElement>
+    <ui:Button text="Generate Codes" name="generate-button" style="margin-top: 10px; margin-bottom: 20px; margin-left: 10px; margin-right: 10px; min-height: 22px;" />
+</ui:UXML>

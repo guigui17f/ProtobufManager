@@ -1,0 +1,12 @@
+syntax = "proto3";
+package unity_extensions;
+import "proto_vector4.proto";
+option csharp_namespace = "GUIGUI17F.ProtobufManager";
+option optimize_for = LITE_RUNTIME;
+
+message ProtoMatrix4x4 {
+  ProtoVector4 column0 = 1;
+  ProtoVector4 column1 = 2;
+  ProtoVector4 column2 = 3;
+  ProtoVector4 column3 = 4;
+}
